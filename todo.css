@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+
+:root {
+    --border-radius: 15px;
+    --primary-color:  #58a3c7;
+    --white-color: #fff;
+    --width-app: 600px;
+}
+
+/*----- ScrollBar Body -----*/
+html *::-webkit-scrollbar {
+    border-radius: 0;
+    width: 8px;
+}
+
+html *::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(22, 24, 35, 0.06);
+}
+
+html *::-webkit-scrollbar-track {
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url('./assets/img/rgb.png') center;
+    background-size: cover;
+}
+
+.app {
+    width: var(--width-app);
+    padding: 2rem;
+    color: #ffffffb0;
+    background-color: #ffffff21;
+    border-radius: var(--border-radius);
+    box-shadow: 0 15px 40px -20 black;
+}
+
+.heading {
+    margin-bottom: 40px;
+    font-size: 28px;
+}
+
+.todo-input {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: var(--border-radius);
+    border: none;
+    font-size: 20px;
+    color: var(--white-color);
+    background-color: #f4f4f425;
+}
+
+.todo-input::placeholder {
+    color: #ffffff70;
+}
+
+.todos,
+.completed-todo,
+.uncompleted-todo {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+.editInput {
+    
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    border-radius: var(--border-radius);
+    color: black;
+    background-color: #f4f4f4bd;
+}
+
+.todo-item span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .8rem;
+}
+
+.todo-item input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    accent-color: lime;
+}
+
+.todo-item input[type="checkbox"]:hover {
+    cursor: pointer;
+}
+
+.todo-icon {
+    gap: 1rem;
+}
+
+.todo-icon a {
+    color: #555555;
+    opacity: 0.4;
+}
+
+.todo-icon a:hover {
+    opacity: 1;
+}
+
+.todo-icon .pen-icon {
+    font-size: 16px;
+}
+
+.todo-icon .xmark-icon {
+    margin-left: 8px;
+    font-size: 20px;
+}
+
+.completed-title {
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.completed-todo .todo-item {
+    background-color: #76c476;
+    text-decoration: line-through;
+}
+
+
+
+
+
+
+
